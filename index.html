@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gesture Detection</title>
     <style>
-       #video-container{
+      #video-container {
         position: relative;
-       } 
-       #webcam{
+      }
+      #webcam {
         position: absolute;
-        visibility: hidden;
-       }
-       #gesture-text{
+        visibility: hidden; 
+      }
+      #gesture-text {
         position: absolute;
         bottom: 2rem;
         right: 2rem;
         font-size: 4rem;
-       }
+      }
     </style>
     <script
       src="https://cdn.jsdelivr.net/npm/fingerpose@0.1.0/dist/fingerpose.min.js"
@@ -31,11 +31,11 @@
   </head>
   <body>
     <h1>Gesture Detection</h1>
-     <div id="video-container">
-        <canvas id="canvas"></canvas>
-        <video id="webcam"></video>
-        <h1 id="gesture-text"></h1>
-     </div>
+    <div id="video-container">
+      <canvas id="canvas"></canvas>
+      <video id="webcam" autoplay playsinline></video>
+      <h1 id="gesture-text"></h1>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
